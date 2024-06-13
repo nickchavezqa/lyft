@@ -41,17 +41,17 @@ Features to be Tested
 	⁃	Customer support contact and issue resolution
 
 Test Strategy
-	1.	Functional Testing
+	1.Functional Testing
 		•	Positive and negative test cases
 		•	End-to-end workflow validation
-	2.	Usability Testing
+	2.Usability Testing
 		•	Ease of navigation and clarity of information
 		•	User satisfaction and feedback
-	3.	Performance Testing
+	3.Performance Testing
 		•	Response time and load handling
-	4.	Security Testing
+	4.Security Testing
 		•	Data protection and user authentication
-	5.	Compatibility Testing
+	5.Compatibility Testing
 		•	Cross-browser and cross-device testing
 
 Test Environment
@@ -93,17 +93,17 @@ Positive Scenario
 Title: Successful Car Rental Booking
 Description: Verify that a user can successfully complete the car rental booking process.
 Steps:
-	1.	Go to https://www.lyft.com/rider/rentals.
-	2.	Enter valid user credentials to log in.
-	3.	Fill in the "Rent a Car" form with valid data:
+	1. Go to https://www.lyft.com/rider/rentals.
+	2. Enter valid user credentials to log in.
+	3. Fill in the "Rent a Car" form with valid data:
 		•	Select rental location
 		•	Choose rental start and end dates
 		•	Select car type
-	4.	Click on the "Search" button.
-	5.	Select an available car from the search results.
-	6.	Review and confirm the booking details.
-	7.	Enter payment information and confirm the booking.
-	8.	Verify the booking confirmation message and details sent via email/SMS.
+	4. Click on the "Search" button.
+	5. Select an available car from the search results.
+	6. Review and confirm the booking details.
+	7. Enter payment information and confirm the booking.
+	8. Verify the booking confirmation message and details sent via email/SMS.
 	Expected Results:
 		•	The user should be able to see available cars for the selected location and dates.
 		•	The booking confirmation message should display all relevant details accurately.
@@ -113,17 +113,17 @@ Negative Scenario
 Title: Booking a Car with Invalid Payment Information
 Description: Verify that the system handles invalid payment information appropriately during the car rental booking process.
 Steps:
-	1.	Go to https://www.lyft.com/rider/rentals.
-	2.	Enter valid user credentials to log in.
-	3.	Fill in the "Rent a Car" form with valid data:
+	1. Go to https://www.lyft.com/rider/rentals.
+	2. Enter valid user credentials to log in.
+	3. Fill in the "Rent a Car" form with valid data:
 		•	Select rental location
 		•	Choose rental start and end dates
 		•	Select car type
-	4.	Click on the "Search" button.
-	5.	Select an available car from the search results.
-	6.	Review the booking details.
-	7.	Enter invalid payment information (e.g., expired credit card, incorrect card number).
-	8.	Attempt to confirm the booking.
+	4. Click on the "Search" button.
+	5. Select an available car from the search results.
+	6. Review the booking details.
+	7. Enter invalid payment information (e.g., expired credit card, incorrect card number).
+	8. Attempt to confirm the booking.
 	Expected Results:
 		•	The system should display an error message indicating that the payment information is invalid.
 		•	The user should not be able to proceed with the booking until valid payment information is provided.
@@ -133,17 +133,17 @@ Positive Scenario
 Title: Successful Car Rental Booking with a Different Vehicle
 Description: Verify that a user can successfully complete the car rental booking process by selecting a different vehicle than the default one.
 Steps:
-	1.	Go to https://www.lyft.com/rider/rentals.
-	2.	Enter valid user credentials to log in.
-	3.	Fill in the "Rent a Car" form with valid data:
+	1. Go to https://www.lyft.com/rider/rentals.
+	2. Enter valid user credentials to log in.
+	3. Fill in the "Rent a Car" form with valid data:
 		•	Select rental location
 		•	Choose rental start and end dates
 		•	Select a different car type than the default one (e.g., SUV instead of Economy)
-	4.	Click on the "Search" button.
-	5.	From the search results, select an available vehicle that matches the chosen type.
-	5.	Review the booking details.
-	6.	Enter payment information and confirm the booking.
-	7.	Verify the booking confirmation message and details sent via email/SMS.
+	4. Click on the "Search" button.
+	5. From the search results, select an available vehicle that matches the chosen type.
+	6. Review the booking details.
+	7. Enter payment information and confirm the booking.
+	8. Verify the booking confirmation message and details sent via email/SMS.
 	Expected Results:
 		•	The user should be able to see and select available cars of the chosen type for the selected location and dates.
 		•	The booking confirmation message should display all relevant details accurately, including the selected vehicle type.
@@ -153,15 +153,15 @@ Negative Scenario
 Title: Attempt to Rent a Vehicle That is Not Available
 Description: Verify that the system appropriately handles the situation where a user attempts to rent a vehicle that is not available.
 Steps:
-	1.	Go to https://www.lyft.com/rider/rentals.
-	2.	Enter valid user credentials to log in.
-	3.	Fill in the "Rent a Car" form with valid data:
+	1. Go to https://www.lyft.com/rider/rentals.
+	2. Enter valid user credentials to log in.
+	3. Fill in the "Rent a Car" form with valid data:
 		•	Select rental location
 		•	Choose rental start and end dates
 		•	Select a car type
-	4.	Click on the "Search" button.
-	5.	From the search results, attempt to select a vehicle that is not available (e.g., a vehicle marked as unavailable or one that has just been rented out by another user).
-	6.	Attempt to proceed with the booking.
+	4. Click on the "Search" button.
+	5. From the search results, attempt to select a vehicle that is not available (e.g., a vehicle marked as unavailable or one that has just been rented out by another user).
+	6. Attempt to proceed with the booking.
 	Expected Results:
 		•	The system should display a message indicating that the selected vehicle is no longer available.
 		•	The user should be prompted to choose a different available vehicle or modify the search criteria.

@@ -1,0 +1,169 @@
+Test Plan for "Rent a Car" Functionality on Lyft
+
+Introduction
+The "Rent a Car" functionality on the Lyft platform allows users to rent vehicles for their transportation needs. This test plan aims to ensure the robustness, reliability, and usability of this functionality.
+
+Objectives
+	⁃	Validate the user interface and user experience.
+	⁃	Ensure data integrity and proper workflow execution.
+	⁃	Verify that the functionality meets business requirements and specifications.
+	⁃	Identify and address any security vulnerabilities.
+	⁃	Confirm compatibility across different devices and browsers.
+
+Scope
+	⁃	UI testing
+	⁃	Functional testing
+	⁃	Usability testing
+	⁃	Performance testing
+	⁃	Security testing
+	⁃	Compatibility testing
+	⁃	API Testing
+
+Assumptions
+	⁃	Test environment is set up  on ( stagingexample.com ) and mirrors the production environment.
+	⁃	Test data is available and represents a variety of user scenarios.
+	⁃	Access to all necessary tools and documentation.
+
+Test Items
+	⁃	Rent a Car Form
+	⁃	Car Selection and Availability
+	⁃	Booking Confirmation
+	⁃	Payment Processing
+	⁃	User Notifications
+
+Features to be Tested
+	⁃	Rent a Car form functionality
+	⁃	Car selection and availability checks
+	⁃	Booking process including modifications and cancellations
+	⁃	Payment gateway integration
+	⁃	User notifications (email, SMS, in-app)
+	⁃	Rental history tracking
+	⁃	Customer support contact and issue resolution
+
+Test Strategy
+	0.	Functional Testing
+	•	Positive and negative test cases
+	•	End-to-end workflow validation
+	0.	Usability Testing
+	•	Ease of navigation and clarity of information
+	•	User satisfaction and feedback
+	0.	Performance Testing
+	•	Response time and load handling
+	0.	Security Testing
+	•	Data protection and user authentication
+	0.	Compatibility Testing
+	•	Cross-browser and cross-device testing
+
+Test Environment
+	⁃	Operating Systems: Windows, macOS, iOS, Android
+	⁃	Browsers: Chrome, Firefox, Safari, Edge
+	⁃	Devices: Desktop, Mobile, Tablet, iPhone and Samsung
+
+Test Deliverables
+	⁃	Test cases and scripts
+	⁃	Test execution reports
+	⁃	Defect logs and resolution status
+	⁃	Final test summary report
+	⁃	Risk and assessment report
+
+Schedule
+	⁃	Test planning: 1 week
+	⁃	Test case development: 2 weeks
+	⁃	Test execution: 2 weeks
+	⁃	Bug fixing and regression testing: 1 week
+	⁃	Final review and sign-off: 1 week
+Roles and Responsibilities
+	⁃	Test Manager: Overall test planning and coordination
+	⁃	QA Engineers: Test case development and execution
+	⁃	Developers: Bug fixing and code updates
+	⁃	UX Designers: Usability testing and feedback incorporation
+
+Entry and Exit Criteria
+Entry Criteria:
+	⁃	Test environment setup is complete.
+	⁃	Test data is prepared.
+	⁃	Test cases are reviewed and approved.
+Exit Criteria:
+	⁃	All critical and high-severity defects are resolved.
+	⁃	Test execution is complete with all test cases passing.
+	⁃	Final test summary report is reviewed and signed off by all stakeholders. 
+
+Critical Scenarios to Test "Rent a Car" Form Functionality
+Positive Scenario
+Title: Successful Car Rental Booking
+Description: Verify that a user can successfully complete the car rental booking process.
+Steps:
+	0.	Go to https://www.lyft.com/rider/rentals.
+	0.	Enter valid user credentials to log in.
+	0.	Fill in the "Rent a Car" form with valid data:
+	•	Select rental location
+	•	Choose rental start and end dates
+	•	Select car type
+	0.	Click on the "Search" button.
+	0.	Select an available car from the search results.
+	0.	Review and confirm the booking details.
+	0.	Enter payment informat                                                                                                                                                                                                                                                                                                                                                                                                                   ion and confirm the booking.
+	0.	Verify the booking confirmation message and details sent via email/SMS.
+Expected Results:
+	•	The user should be able to see available cars for the selected location and dates.
+	•	The booking confirmation message should display all relevant details accurately.
+	•	A confirmation email/SMS should be sent to the user with the booking details.
+
+Negative Scenario
+Title: Booking a Car with Invalid Payment Information
+Description: Verify that the system handles invalid payment information appropriately during the car rental booking process.
+Steps:
+	0.	Go to https://www.lyft.com/rider/rentals.
+	0.	Enter valid user credentials to log in.
+	0.	Fill in the "Rent a Car" form with valid data:
+	•	Select rental location
+	•	Choose rental start and end dates
+	•	Select car type
+	0.	Click on the "Search" button.
+	0.	Select an available car from the search results.
+	0.	Review the booking details.
+	0.	Enter invalid payment information (e.g., expired credit card, incorrect card number).
+	0.	Attempt to confirm the booking.
+Expected Results:
+	•	The system should display an error message indicating that the payment information is invalid.
+	•	The user should not be able to proceed with the booking until valid payment information is provided.
+	•	No booking confirmation should be generated or sent via email/SMS.
+
+Positive Scenario
+Title: Successful Car Rental Booking with a Different Vehicle
+Description: Verify that a user can successfully complete the car rental booking process by selecting a different vehicle than the default one.
+Steps:
+	0.	Go to https://www.lyft.com/rider/rentals.
+	0.	Enter valid user credentials to log in.
+	0.	Fill in the "Rent a Car" form with valid data:
+	•	Select rental location
+	•	Choose rental start and end dates
+	•	Select a different car type than the default one (e.g., SUV instead of Economy)
+	0.	Click on the "Search" button.
+	0.	From the search results, select an available vehicle that matches the chosen type.
+	0.	Review the booking details.
+	0.	Enter payment information and confirm the booking.
+	0.	Verify the booking confirmation message and details sent via email/SMS.
+Expected Results:
+	•	The user should be able to see and select available cars of the chosen type for the selected location and dates.
+	•	The booking confirmation message should display all relevant details accurately, including the selected vehicle type.
+	•	A confirmation email/SMS should be sent to the user with the booking details.
+
+Negative Scenario
+Title: Attempt to Rent a Vehicle That is Not Available
+Description: Verify that the system appropriately handles the situation where a user attempts to rent a vehicle that is not available.
+Steps:
+	0.	Go to https://www.lyft.com/rider/rentals.
+	0.	Enter valid user credentials to log in.
+	0.	Fill in the "Rent a Car" form with valid data:
+	•	Select rental location
+	•	Choose rental start and end dates
+	•	Select a car type
+	0.	Click on the "Search" button.
+	0.	From the search results, attempt to select a vehicle that is not available (e.g., a vehicle marked as unavailable or one that has just been rented out by another user).
+	0.	Attempt to proceed with the booking.
+Expected Results:
+	•	The system should display a message indicating that the selected vehicle is no longer available.
+	•	The user should be prompted to choose a different available vehicle or modify the search criteria.
+	•	The user should not be able to proceed with the booking for the unavailable vehicle.
+	•	No booking confirmation should be generated or sent via email/SMS.

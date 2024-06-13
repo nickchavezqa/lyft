@@ -41,18 +41,18 @@ Features to be Tested
 	⁃	Customer support contact and issue resolution
 
 Test Strategy
-	0.	Functional Testing
-	•	Positive and negative test cases
-	•	End-to-end workflow validation
-	0.	Usability Testing
-	•	Ease of navigation and clarity of information
-	•	User satisfaction and feedback
-	0.	Performance Testing
-	•	Response time and load handling
-	0.	Security Testing
-	•	Data protection and user authentication
-	0.	Compatibility Testing
-	•	Cross-browser and cross-device testing
+	1.	Functional Testing
+		•	Positive and negative test cases
+		•	End-to-end workflow validation
+	2.	Usability Testing
+		•	Ease of navigation and clarity of information
+		•	User satisfaction and feedback
+	3.	Performance Testing
+		•	Response time and load handling
+	4.	Security Testing
+		•	Data protection and user authentication
+	5.	Compatibility Testing
+		•	Cross-browser and cross-device testing
 
 Test Environment
 	⁃	Operating Systems: Windows, macOS, iOS, Android
